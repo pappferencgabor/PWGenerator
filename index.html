@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Password Generator</h2>
+
+    <div id="result">
+        <input type="text" id="password" readonly>
+        <img src="https://www.svgrepo.com/show/24801/copy.svg" alt="" onclick="CopyPW()">
+    </div>
+
+    <div id="settings">
+        <div id="lendata">
+            <label for="pwlen">Character Length <span id="pwlennum">0</span></label>
+            <input type="range" id="pwlen" min="0" max="20" value="0" oninput="PWLen()">
+        </div>
+
+        <input type="checkbox" name="" id="pwupper" onchange="CharTypes(this)">
+        <label for="pwupper">Include Uppercase letters</label>
+        <br>
+
+        <input type="checkbox" name="" id="pwlower" onchange="CharTypes(this)">
+        <label for="pwlower">Include Lowercase letters</label>
+        <br>
+
+        <input type="checkbox" name="" id="pwnumbers" onchange="CharTypes(this)">
+        <label for="pwnumbers">Include Numbers</label>
+        <br>
+
+        <input type="checkbox" name="" id="pwsymbols" onchange="CharTypes(this)">
+        <label for="pwsymbols">Include symbols</label>
+
+        <div id="strength">
+            <p>Strength</p>
+
+            <div id="leveldiv">
+                <p id="level">MEDIUM</p>
+                <div id="ticks">
+                    <div class="tick" id="tick1"></div>
+                    <div class="tick" id="tick2"></div>
+                    <div class="tick" id="tick3"></div>
+                    <div class="tick" id="tick4"></div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" onclick="GeneratePW()" id="generatebtn">Generate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

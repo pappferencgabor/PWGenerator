@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(37, 37, 37);
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#result {
+    width: 400px;
+    background-color: grey;
+    margin: 10px;
+    padding: 10px;
+}
+#result > img {
+    width: 16px;
+    cursor: pointer;
+}
+
+#password {
+    width: 350px;
+    height: 35px;
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: grey;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+#password:focus {
+    outline: none;
+}
+
+#settings {
+    width: 400px;
+    background-color: grey;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+#lendata {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#pwlen {
+    width: 400px;
+}
+#pwlennum {
+    text-align: right;
+    color: greenyellow;
+}
+
+#strength {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    background-color: black;
+    padding: 1px;
+}
+
+#leveldiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    accent-color: greenyellow;
+}
+
+input[type="checkbox"] {
+    accent-color: greenyellow;
+}
+
+#ticks {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.tick {
+    width: 5px;
+    height: 20px;
+    border: 1px solid white;
+}
+.tickfull {
+    background-color: gold;
+    border: 1px solid gold;
+}
+
+#generatebtn {
+    background-color: greenyellow;
+    color: rgb(37, 37, 37);
+    cursor: pointer;
+    border: 1px solid greenyellow;
+}
+#generatebtn:hover {
+    background-color: rgb(37, 37, 37);
+    color: greenyellow;
+}
